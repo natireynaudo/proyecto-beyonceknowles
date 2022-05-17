@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "div div div"
+    "footer footer footer"
+}
+
+header{
+    background-color: black;
+    grid-area: header;
+}
+
+div{
+    grid-area: div;
+    background-color: black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+h1{
+    color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.portada{
+    width: 100%;
+}
+
+.botonera {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.botonera ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.botonera ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: beige;
+}
+
+div h2{
+    display: flex;
+    justify-content: right;
+    color: bisque;
+    margin: 20px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: beige;
+}
+
+.inicio{
+    height: 500px;
+    margin: 10px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* TOURS */
+
+.imagenTour{
+    height: 500px;
+    margin: 10px
+}
+.fechasTours{
+    display: flex;
+    flex-direction: row;
+    background-image: url(../img/tour.webp);
+    justify-content: center;
+    align-items: center;
+}
+
+.listadoFechas{
+    list-style-type: none;
+    color: beige;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+/* GALERÍA */
+.galeria1{
+    width: 400px;
+}
+
+.galeria2{
+    width: 400px;
+}
+
+.galeria3{
+    width: 400px;
+}
+
+.galeria4{
+    width: 400px;
+}
+
+.galeria5{
+    width: 400px;;
+}
+
+.galeria6{
+    width: 400px;
+}
+
+.galeria7{
+    width: 400px;
+}
+
+.galeria8{
+    width: 400px;
+}
+
+.galeria9{
+    width: 400px;
+}
+
+.imagenesGaleria{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* VIDEOS */
+
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 20px;
+}
+
+/* CONTACTO */
+
+.queremosConocerte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+form{
+    color: beige;
+}
+
+fieldset{
+    width: 800px;
+}
+
+header h2{
+    color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+.imagenContacto{
+    width: 100%;
+}
+
+/* ADAPTACIÓN TABLET (index)*/
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header header "
+            "div div"
+            "footer footer";
+    }
+
+    .inicio{
+        height: 400px;
+    }
+
+    p{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+/* ADAPTACIÓN A CELULAR (index) */
+@media only screen and (max-width:599px) {
+
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+
+    .portada{
+        display: none;
+    }
+
+    .inicio{
+        height: 350px;
+        display: flex;
+    }
+
+    p{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+/* ADAPTACIÓN TABLET (tour)*/
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .fechasTours{
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "div div"
+            "div div"
+            "footer footer";
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagenTour{
+        height: 400px;
+    }
+
+    .listadoFechas{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+/* ADAPTACIÓN A CELULAR (index) */
+@media only screen and (max-width:599px) {
+    .fechasTours{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "div"
+            "footer";
+    }
+
+    .imagenTour{
+        height: 200px;
+    }
+
+    .listadoFechas{
+        margin: 10px;
+        padding: 10px;
+    }
+
+}
+
+/* NO HACE FALTA ADAPTACIÓN TABLET (videos)*/
+
+/* ADAPTACIÓN CELULAR (videos) */
+@media only screen and (max-width:599px) {
+    .videos{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+
+    .video1{
+        height: 200px;
+        width: 350px;
+    }
+}
+
+/* NO HACE FALTA ADAPTACIÓN TABLET (galería)*/
+@media only screen and (max-width:599px) {
+
+    .galeriaImagenes{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+
+    .galeria1{
+        width: 350px;
+    }
+
+    .galeria2{
+        width: 350px;
+    }
+    
+    .galeria3{
+        width: 350px;
+    }
+
+    .galeria4{
+        width: 350px;
+    }
+
+    .galeria5{
+        width: 350px;
+    }
+
+    .galeria6{
+        width: 350px;
+    }
+
+    .galeria7{
+        width: 350px;
+    }
+
+    .galeria8{
+        width: 350px;
+    }
+
+    .galeria9{
+        width: 350px;
+    }
+}
+
+/* ADAPTACIÓN TABLET (contacto)*/
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+
+    .queremosConocerte{
+        display: grid;
+        grid-template-areas:
+            "header header "
+            "div div"
+            "div div"
+            "footer footer";
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imagenContacto{
+        width: 750px;
+        margin: 10px;
+    }
+
+    .contactoFormulario{
+        width: 600px;
+    }
+    
+}
+
+/* ADAPTACIÓN CELULAR (contacto)*/
+
+@media only screen and (max-width:599px) {
+
+    .queremosConocerte{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+
+    .imagenContacto{
+        width: 350px;
+        margin: 10px;
+    }
+
+    .contactoFormulario{
+        width: 350px;
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
