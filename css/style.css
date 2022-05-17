@@ -398,10 +398,31 @@ header h2{
     .contactoFormulario{
         width: 350px;
     }
-    
 
+}
 
+.inicio:hover{ 
+    filter: grayscale(100%);
+}
 
+@keyframes listado{
+    0% {
+        opacity: 0; 
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.listadoFechas{
+    animation-name: listado;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+}
+
+.contactoFormulario{
+    background-image: linear-gradient(to right, black, #7D3C98);
 }
 
 
