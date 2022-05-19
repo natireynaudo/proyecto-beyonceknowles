@@ -36,17 +36,17 @@ h1{
     margin: 10px;
 }
 
-.portada{
+.img-fluid{
     width: 100%;
 }
 
-.botonera {
+/* .botonera {
     
     display: flex;
     justify-content: center;
-}
+} */
 
-.botonera ul li {
+/* .botonera ul li {
     display: inline-block;
     margin-left: 20px;
 }
@@ -55,7 +55,7 @@ h1{
     text-decoration: none;
     text-transform: uppercase;
     color: beige;
-}
+} */
 
 div h2{
     display: flex;
@@ -86,10 +86,11 @@ p{
 
 /* TOURS */
 
-.imagenTour{
+/* .imagenTour{
     height: 500px;
     margin: 10px
-}
+} */
+
 .fechasTours{
     display: flex;
     flex-direction: row;
@@ -103,16 +104,17 @@ p{
     color: beige;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold
+    text-transform:uppercase;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* GALERÍA */
-.galeria1{
-    width: 400px;
+.rounded{
+    height: 400px;
 }
 
-.galeria2{
+/* .galeria2{
     width: 400px;
 }
 
@@ -142,7 +144,7 @@ p{
 
 .galeria9{
     width: 400px;
-}
+} */
 
 .imagenesGaleria{
     display: flex;
@@ -201,10 +203,6 @@ header h2{
             "footer footer";
     }
 
-    .inicio{
-        height: 400px;
-    }
-
     p{
         margin: 10px;
         padding: 10px;
@@ -221,15 +219,6 @@ header h2{
             "header"
             "div"
             "footer";
-    }
-
-    .portada{
-        display: none;
-    }
-
-    .inicio{
-        height: 350px;
-        display: flex;
     }
 
     p{
@@ -425,7 +414,23 @@ header h2{
     background-image: linear-gradient(to right, black, #7D3C98);
 }
 
+.nav-link{
+    color: darkgoldenrod;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 
+}
+
+.navbar-brand{
+    color: darkgoldenrod;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+}
+
+.navbar-nav{
+    background-color: black;
+}
 
 
 

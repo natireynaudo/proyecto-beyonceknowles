@@ -5,33 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
+
         <h1>BEYONCE KNOWLES</h1>
         <h2>Fan Page</h2>
-        <img class="portada" src="img/Portada.jpg" alt="imagen header">
-        <nav class="botonera">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/Tours.html">Tours</a></li>
-                <li><a href="pages/Galería.html">Galería</a></li>
-                <li><a href="pages/Videos.html">Videos</a></li>
-                <li><a href="pages/Contacto.html">Contacto</a></li>
-            </ul>
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/Tours.html">Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/Galería.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/Videos.html">Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/Contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
+
+        <!-- CAROUSEL -->
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Portada.jpg" class="d-block w-100" alt=".imagenBeyonce.">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portada3.webp" class="d-block w-100" alt="imagenBeyonce">
+              </div>
+              <div class="carousel-item">
+                <img src="img/portada2.jpg" class="d-block w-100" alt="imagenBeyonce">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
     </header>
 
     <div class="contenedor">
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis similique odio laboriosam. Magnam veniam minima ipsum necessitatibus dolore tempore sunt vero quisquam vitae. Nesciunt sapiente accusantium ducimus non similique quos rerum et mollitia ipsum neque pariatur ab atque nulla, officiis adipisci? At fugiat, voluptatibus dolorum debitis officia sequi, qui quam, esse repellendus vel repellat eum doloremque corrupti itaque nihil! Porro quaerat nulla repudiandae sunt perferendis cumque maiores unde delectus eaque consequatur laborum placeat, harum quos, eveniet nihil vitae illum ea perspiciatis sit alias asperiores nemo voluptates culpa. Vero culpa quae dolorum harum, nostrum quaerat repudiandae? Earum alias, veritatis nostrum dolores ipsam eos iusto officia perferendis repellat esse. Odio nihil accusantium, expedita ab itaque excepturi dignissimos ad voluptatum vitae, ipsa, nam laborum molestiae natus nesciunt illum rem quia repudiandae facilis sint optio ex inventore temporibus. Officiis sit necessitatibus voluptas aut unde iure consequatur optio nemo officia. Optio vero error aliquid perferendis.</P>
-        <img class="inicio" src="img/imagen inicio.jpg" alt="imagen inicio">
+
+        <!-- MARGEN ARRIBA A LA IMAGEN -->
+        <img class="img-fluid mt-4" src="img/imagen inicio.jpg" alt="imagen inicio">
     </div>
 
     <footer id="footer">
         <p>Sitio creado por <strong>Natalia Reynaudo</strong></p>
     </footer>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
