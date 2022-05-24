@@ -5,22 +5,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 
+
 body{
     font-family: 'Roboto', sans-serif;
     display: grid;
     grid-template-areas:
     "header header header"
     "div div div"
+    "section section section"
     "footer footer footer"
 }
 
 header{
-    background-color: black;
+    background-color:black;
     grid-area: header;
 }
 
 div{
     grid-area: div;
+    background-color: black;
+}
+
+section{
+    grid-area: section;
     background-color: black;
 }
 
@@ -30,15 +37,13 @@ footer{
 }
 
 h1{
-    color: beige;
+    color:darkgoldenrod;
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
-.img-fluid{
-    width: 100%;
-}
+
 
 /* .botonera {
     
@@ -60,8 +65,7 @@ h1{
 div h2{
     display: flex;
     justify-content: right;
-    color: bisque;
-    margin: 20px;
+    color:beige;
 }
 
 .contenedor{
@@ -86,18 +90,18 @@ p{
 
 /* TOURS */
 
-/* .imagenTour{
+.imagenTour{
     height: 500px;
     margin: 10px
-} */
-
+}
+ 
 .fechasTours{
     display: flex;
     flex-direction: row;
     background-image: url(../img/tour.webp);
     justify-content: center;
     align-items: center;
-}
+} 
 
 .listadoFechas{
     list-style-type: none;
@@ -107,14 +111,14 @@ p{
     text-transform:uppercase;
     font-weight: bold;
     text-align: center;
-}
+} 
 
-/* GALERÍA */
+ /* GALERÍA  */
 .rounded{
     height: 400px;
 }
 
-/* .galeria2{
+.galeria2{
     width: 400px;
 }
 
@@ -144,14 +148,13 @@ p{
 
 .galeria9{
     width: 400px;
-} */
+}
 
 .imagenesGaleria{
     display: flex;
     justify-content: center;
     align-items:stretch;
     flex-wrap: wrap;
-    padding: 20px;
 }
 
 /* VIDEOS */
@@ -183,7 +186,7 @@ fieldset{
 }
 
 header h2{
-    color: beige;
+    color: darkgoldenrod;
     display: flex;
     justify-content: center;
 }
@@ -192,9 +195,9 @@ header h2{
     width: 100%;
 }
 
-/* ADAPTACIÓN TABLET (index)*/
+/* ADAPTACIÓN TABLET (index) */
 
-@media screen and (min-width:600px) and (max-width:1023px) {
+/* @media screen and (min-width:600px) and (max-width:1023px) {
     .contenedor {
         display: grid;
         grid-template-areas:
@@ -206,9 +209,9 @@ header h2{
     p{
         margin: 10px;
         padding: 10px;
-    }
+    } 
 
-}
+} */
 /* ADAPTACIÓN A CELULAR (index) */
 @media only screen and (max-width:599px) {
 
@@ -417,19 +420,136 @@ header h2{
 .nav-link{
     color: darkgoldenrod;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
 
 }
 
 .navbar-brand{
     color: darkgoldenrod;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 30px;
 
 }
 
 .navbar-nav{
     background-color: black;
+}
+
+.tamLogo{
+    width: 100px;
+}
+
+.imgBio{
+    /* filter: grayscale(40%); */
+    width: 500px;
+    margin: 15px;
+    padding: 10px;
+}
+.imgBio:hover{ 
+    /* filter: grayscale(0%); */
+    transform: scale(1.1,1.1);
+}
+
+.titFrase{
+    text-align:right;
+    color: goldenrod;
+}
+
+.listadoCanciones{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.Canciones{
+    color: darkgoldenrod;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.navbar-toggler-icon{
+    background-color: darkgoldenrod;
+}
+
+
+/* ADAPTACIÓN TABLET (index)*/
+
+@media screen and (min-width:600px) and (max-width:1023px) {
+    .bodyIndex {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "div div"
+            "section section"
+            "section section"
+            "footer footer";
+    }
+
+    .imgBio{
+        width: 300px;
+    }
+
+    .parrafoBio{
+        margin: 10px;
+
+    }
+
+    .sectionBey{
+        justify-content: center;
+    }
+} 
+
+/* ADAPTACIÓN A CELULAR (index) */
+@media only screen and (max-width:599px) {
+    .fechasTours{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "div"
+            "footer";
+    }
+
+    .listadoFechas{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .imgBio{
+        width: 400px;
+        margin: 5px;
+    }
+
+    .sectionBey{
+        justify-content: center;
+    }
+
+    .titFrase{
+        margin: 10px;
+    }
+
+
+
+}
+
+/* ADAPTACIÓN A CELULAR (Galería) */
+@media only screen and (max-width:599px) {
+    .galeriaImagenes{
+        display: grid;
+        grid-template-areas:
+            "header"
+            "div"
+            "footer";
+    }
+
+    .galeria2{
+        width: 350px;
+        height: 350px; 
+    }
+
 }
 
 
